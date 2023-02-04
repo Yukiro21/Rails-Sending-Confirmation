@@ -144,7 +144,7 @@ body{
 .nav-container{
   width: 100%;
   height: 8vh;
-  background-color: $second-color;
+  background-color: $third-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -349,6 +349,8 @@ body{
         align-items: center;
         border-bottom: 1px solid #10be3b8f;
         border-left: 1px solid #10be3b8f;
+        color: white;
+        text-align: center;
 
         input[type="radio"]{
           width: 25px;
@@ -358,8 +360,7 @@ body{
          border: #10be3b;
         }
   
-        color: $first-color;
-
+     
       }
     }
     

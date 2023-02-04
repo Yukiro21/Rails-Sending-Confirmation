@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   <style>
+  /* Add CSS styles here */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto; /* This centers the body horizontally */
+  }
+</style>
   </head>
   <body>
-    <p>Your flight has been booked!</p>
-    <p><%= "#{@booking.flight.departure_airport.code} to #{@booking.flight.arrival_airport.code}" %></p>
-    <p><%= "Date: #{@booking.flight.departure_date_formatted}"%></p>
-    <p><%= "Time: #{@booking.flight.departure_time_formatted}"%></p>
-    <p><%= "Duration: #{@booking.flight.duration.to_i} hours"%></p>
+    <h1>Your Flight Has Been Booked!</h1>
+
+    <p>
+      <%= "#{@booking.flight.departure_airport.code} to #{@booking.flight.arrival_airport.code}" %>
+    </p>
+    <p>Flight Date: <%= "#{@booking.flight.departure_date_formatted}" %></p>
+    <p>Time: <%= "#{@booking.flight.departure_time_formatted}" %></p>
+    <p>Duration: <%= "#{@booking.flight.duration.to_i} hours" %></p>
+
+    <p>Thank you for booking with us!</p>
   </body>
 </html>
